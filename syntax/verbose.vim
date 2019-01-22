@@ -3,6 +3,7 @@ syntax keyword verboseType NUMBER CHARACTER contained
 syntax keyword verboseOperator PUT REMOVE DUPLICATE SWAP ADD SUBTRACT MULTIPLY DIVIDE OUTPUT GET CONVERT contained
 syntax keyword verboseStack STACK PERSON contained
 syntax keyword verboseConditional IF contained
+syntax keyword verboseParameter FIRST SECOND contained
 syntax keyword verbosePreposition ONTO TOP contained
 syntax match verboseStatementPush /PUT THE NUMBER \(NEGATIVE \)\?[MDCLXVI]\+ ONTO THE TOP OF THE PROGRAM STACK/ contains=CONTAINED
 syntax match verboseStatementPop /REMOVE THE CURRENT ELEMENT OF THE PROGRAM STACK/ contains=CONTAINED
@@ -19,23 +20,24 @@ syntax match verboseStatementInputNumber /GET A ROMAN NUMERAL TYPED IN BY THE CU
 syntax match verboseStatementPrintCharacter /GET THE TOP ELEMENT OF THE STACK AND CONVERT IT TO AN ASCII CHARACTER AND OUTPUT IT FOR THE CURRENT PERSON USING THIS PROGRAM TO SEE/ contains=CONTAINED
 syntax match verboseStatementPrintNumber /GET THE TOP ELEMENT OF THE STACK AND OUTPUT IT FOR THE CURRENT PERSON USING THIS PROGRAM TO SEE/ contains=CONTAINED
 
-highlight link verboseStatementAdd String
-highlight link verboseStatementPop String
-highlight link verboseStatementPush String
-highlight link verboseStatementSwap String
-highlight link verboseStatementDivide String
-highlight link verboseStatementModulo String
-highlight link verboseStatementMultiply String
-highlight link verboseStatementDuplicate String
-highlight link verboseStatementSubstract String
-highlight link verboseStatementConditional String
-highlight link verboseStatementInputNumber String
-highlight link verboseStatementPrintNumber String
-highlight link verboseStatementInputCharacter String
-highlight link verboseStatementPrintCharacter String
+" highlight link verboseStatementAdd String
+" highlight link verboseStatementPop String
+" highlight link verboseStatementPush String
+" highlight link verboseStatementSwap String
+" highlight link verboseStatementDivide String
+" highlight link verboseStatementModulo String
+" highlight link verboseStatementMultiply String
+" highlight link verboseStatementDuplicate String
+" highlight link verboseStatementSubstract String
+" highlight link verboseStatementConditional String
+" highlight link verboseStatementInputNumber String
+" highlight link verboseStatementPrintNumber String
+" highlight link verboseStatementInputCharacter String
+" highlight link verboseStatementPrintCharacter String
 highlight link verboseType Type
 highlight link verboseNumber Number
 highlight link verboseOperator Function
 highlight link verboseStack Keyword
 highlight link verboseConditional Operator
+highlight link verboseParameter String
 highlight link verbosePreposition Operator
