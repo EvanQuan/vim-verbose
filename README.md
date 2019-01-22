@@ -1,2 +1,3 @@
-# vim-verbose
-:sunrise_over_mountain: Verbose syntax highlighting for Vim
+# :sunrise_over_mountains: vim-verbose
+
+[Link](https://esolangs.org/wiki/Verbose)
