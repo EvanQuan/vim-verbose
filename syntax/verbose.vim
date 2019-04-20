@@ -1,3 +1,11 @@
+" ============================================================================
+" File: verbose.vim
+" Maintainer: https://github.com/EvanQuan/vim-verbose/
+" Version: 1.0.0
+"
+" Syntax highlighting for verbose files.
+" ============================================================================
+
 syntax match verboseNumber / \(NEGATIVE \)\?[MDCLXVI]\+ / contained
 syntax keyword verboseType NUMBER CHARACTER contained
 syntax keyword verboseOperator PUT REMOVE DUPLICATE SWAP ADD SUBTRACT MULTIPLY DIVIDE OUTPUT GET CONVERT contained
