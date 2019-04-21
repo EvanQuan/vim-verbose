@@ -1,10 +1,14 @@
 " ============================================================================
 " File: verbose.vim
 " Maintainer: https://github.com/EvanQuan/vim-verbose/
-" Version: 1.0.0
+" Version: 1.0.1
 "
 " Syntax highlighting for verbose files.
 " ============================================================================
+
+if exists("b:current_syntax")
+  finish
+endif
 
 syntax match verboseNumber / \(NEGATIVE \)\?[MDCLXVI]\+ / contained
 syntax keyword verboseType NUMBER CHARACTER contained
@@ -49,3 +53,5 @@ highlight link verboseStack Keyword
 highlight link verboseConditional Operator
 highlight link verboseParameter String
 highlight link verbosePreposition Operator
+
+let b:current_syntax = "verbose"
